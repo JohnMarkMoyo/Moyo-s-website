@@ -1,0 +1,82 @@
+<!-- Redesigned by: Moyo, John Mark C. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chevro by: John Mark C. Moyo</title>
+  <link href="../CSS/index.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <h1>Chevro</h1>
+    <p>How FAR can you go with these CARS.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="About us.html">About</a>
+    <a href="DASHBOARD.html">Dashboard</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Contact Us.html">Contact</a>
+    <a href="Universe.html">Universe</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Featured Car Brands</h2>
+
+      <article>
+        <h3>Chevrolet: American Muscle, Modern Tech</h3>
+        <p>Chevrolet continues to define American car culture with bold designs and cutting-edge innovation. Learn about its iconic models like the Camaro and Corvette.</p>
+        <a href="#">Explore Chevrolet</a>
+      </article>
+
+      <article>
+        <h3>Toyota: Reliability Across Generations</h3>
+        <p>From the Corolla to the Land Cruiser, Toyota is known worldwide for dependable vehicles that stand the test of time. Dive into its global legacy.</p>
+        <a href="#">Explore Toyota</a>
+      </article>
+    </section>
+
+    <aside>
+      <h2>Brand Focus</h2>
+      <p>Hi, I'm John Mark C. Moyo, the founder of Chevro. This site is your one-stop hub for learning about the top car brands, their histories, and standout models.</p>
+      <h3>Top Brands</h3>
+      <ul>
+        <li><a href="#">BMW</a></li>
+        <li><a href="#">Mercedes-Benz</a></li>
+        <li><a href="#">Tesla</a></li>
+        <li><a href="#">Honda</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 John Mark C. Moyo. All rights reserved.</p>
+  </footer>
+
+  <!-- Custom Modal -->
+  <div class="modal" id="welcomeModal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal()">&times;</button>
+      <h2>Welcome!</h2>
+      <p>Welcome to my website. Explore amazing car brands and more!</p>
+    </div>
+  </div>
+
+  <script>
+    function closeModal() {
+      document.getElementById('welcomeModal').classList.remove('show');
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () {
+        document.getElementById('welcomeModal').classList.add('show');
+      }, 500);
+    });
+  </script>
+</body>
+</html>

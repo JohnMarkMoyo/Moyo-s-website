@@ -1,0 +1,105 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      max-width: 1000px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+      border: 2px solid rgba(240, 98, 146, 0.4);
+      transition: border-color 0.3s ease;
+    }
+
+    .container:hover {
+      border-color: #f06292;
+    }
+
+    .left {
+      flex: 1;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .left img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px 0 0 20px;
+    }
+
+    .right {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .right h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #f06292;
+    }
+
+    .right p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #eee;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: linear-gradient(90deg, #f3904f, #f5515f);
+      border: none;
+      border-radius: 25px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      width: fit-content;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: linear-gradient(90deg, #f5515f, #f3904f);
+    }
+
+    @media(max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .left img {
+        height: 300px;
+        border-radius: 20px 20px 0 0;
+      }
+      .right {
+        padding: 30px;
+      }
+    }
